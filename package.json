@@ -1,0 +1,39 @@
+{
+  "name": "@shrinkray-tools/speed-banner",
+  "version": "0.1.0",
+  "description": "Drop-in LCP and INP banner for development using web-vitals.",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "demo": "npx vite"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.js"
+    },
+    "./react": {
+      "require": "./react.js",
+      "import": "./react.js"
+    }
+  },
+  "keywords": [
+    "web-vitals",
+    "performance",
+    "INP",
+    "LCP",
+    "banner",
+    "shrinkray"
+  ],
+  "author": "ShrinkRay Tools",
+  "license": "MIT",
+  "dependencies": {
+    "web-vitals": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "vite": "^7.0.6"
+  }
+}

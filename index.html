@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShrinkRay Speed Banner Demo</title>
+  <script type="module">
+    import { mountSpeedBanner } from './index.js';
+    mountSpeedBanner();
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      color: #333;
+    }
+    .content {
+      margin-top: 3rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>ShrinkRay Speed Banner</h1>
+  <p>This page demonstrates the drop-in LCP/INP tracker for development.</p>
+  <img src="https://placekitten.com/800/400" alt="kitten" />
+  <div class="content">
+    <p>Scroll around, resize, or interact with the page to see updates in the banner.</p>
+    <p><strong>Note:</strong> Banner only appears in development mode.</p>
+    <p>Try forcing a layout shift or triggering an interaction delay to see INP in action.</p>
+  </div>
+</body>
+</html>
